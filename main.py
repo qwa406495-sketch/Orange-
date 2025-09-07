@@ -6,6 +6,6 @@ st.title("stress detector app")
 name=st.text_input("enter your name")
 
 #display a message when a button is clicked 
-if st.button("submit")
+if st.button("submit"):
   st.write(f"hlo, {name}! welcome to stress detector app.")
   
