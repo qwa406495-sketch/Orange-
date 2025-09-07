@@ -11,5 +11,5 @@ if st.button("submit"):
   st.write("please choose the correct options")
   sleep = st.number_input("enter your sleeping hours", min_value=0.0)
   if st.button("percentage of stress"):
-    predicted_stress = model.predict([hours])[]
+    predicted_stress = model.predict([hours])[1]
     st.success(f"predicted stress: {predicted_stress:.2f}")
