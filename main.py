@@ -1,5 +1,11 @@
 import streamlit as st
-import numpy as np
+import panda as pd
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import logisticregression
+from sklearn.metrics import accuracy_score, classification_report
+
+# load the dataset
+data = pd.read_csv('stressdetector.csv')
 
 st.title("stress detector app")
 
